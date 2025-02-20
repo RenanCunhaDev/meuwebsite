@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Habilidades - Renan Cunha Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(imagem/fundo.png) no-repeat center center fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #1A1A2E;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        header nav a:hover {
+            color: #33FFFF;
+        }
+
+        .skills {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .skills h1 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .skills .skill-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        .skill-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.4s ease, height 0.4s ease;
+            overflow: hidden;
+        }
+
+        .skill-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            transition: opacity 0.3s ease;
+        }
+
+        .skill-card span {
+            font-size: 1rem;
+            color: #555;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Descrição oculta inicialmente */
+        .skill-card .description {
+            font-size: 0.9rem;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 10px;
+            opacity: 0;
+            width: 90%;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Efeito ao passar o mouse */
+        .skill-card:hover {
+            transform: scale(1.2);
+            height: 200px;
+        }
+
+        .skill-card:hover img,
+        .skill-card:hover span {
+            opacity: 0;
+        }
+
+        .skill-card:hover .description {
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1A1A2E;
+            color: #ffffff;
+            margin-top: 50px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Renan Cunha Dev</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="contato.html">Contato</a>
+        <a href="artigos.html">Artigos</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+
+<section class="skills">
+    <h1>Minhas Habilidades</h1>
+    <div class="skill-card-container">
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <span>HTML5</span>
+            <div class="description">Nível de conhecimento: INTERMEDIÁRIO.</div>
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <span>CSS3</span>
+            <div class="description">Nível de conhecimento: INTERMEDIÁRIO.</div>
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <span>JavaScript</span>
+            <div class="description">Nível de conhecimento: BÁSICO.</div>
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP 8">
+            <span>PHP 8</span>
+            <div class="description">Nível de conhecimento: BÁSICO.</div>
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+            <span>Bootstrap</span>
+            <div class="description">Nível de conhecimento: BÁSICO.</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Renan Cunha. Todos os direitos reservados.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

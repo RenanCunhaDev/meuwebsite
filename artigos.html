@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Artigos - Renan Cunha Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(imagem/fundo.png) no-repeat center center fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #1A1A2E;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        header nav a:hover {
+            color: #33FFFF;
+        }
+
+        .articles {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .articles h1 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .article-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .article-card {
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1A1A2E;
+            color: #ffffff;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Renan Cunha Dev</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="contato.html">Contato</a>
+        <a href="artigos.html">Artigos</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+
+<section class="articles">
+    <h1>Meus Artigos</h1>
+    <div class="article-card-container">
+        <div class="article-card">
+            <h3>Inteligência Artificial:Rumo a Consciência.</h3>
+            <p>Principais Abordagens de uma IA Consciente...</p>
+            <a href="meupdf/Artigo Inteligência Artificial Rumo a Consciência.pdf">Leia mais</a>
+        </div>
+        <div class="article-card">
+            <h3>Em breve...</h3>
+            <p>vázio</p>
+            <a href="#">Leia mais</a>
+        </div>
+        <div class="article-card">
+            <h3>Em breve...</h3>
+            <p>vázio</p>
+            <a href="#">Leia mais</a>
+        </div>
+       
+        
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Renan Cunha. Todos os direitos reservados.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
